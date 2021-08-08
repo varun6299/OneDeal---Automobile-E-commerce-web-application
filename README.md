@@ -29,6 +29,7 @@ https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 1. The website was created using HTML for website structure and CSS for formatting and designing elements.
 2. The use of Jquery was made to create additional animations and scrolling mechanisms to make the website smoother.
 3. Media Queries were used to make the webapp responsive to different screen sizes and devices.
+4. NOTE - Despite best efforts, some unwanted formatting changes occur in Apple devices for input boxes and alignment.
 
 ![Price Prediction Section](Static%20duplicate/GitHubImages/Search%20Result.png)
 
@@ -41,3 +42,4 @@ https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 1. Deployment was performed using Git and Heroku.
 
 The link to the website is provided below - 
+https://onedeal.herokuapp.com/
