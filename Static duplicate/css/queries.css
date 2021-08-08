@@ -1,0 +1,462 @@
+
+/*--------------------------------- BIG TABLETS --------------------------------- */
+
+@media only screen and (max-width:1200px) {
+
+  .Search-text-box{
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row{
+    padding: 0 2%;
+  }
+
+  /*---------- Search Result ------------*/
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 90%;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  /*---------- successfully Listed ------------*/
+
+  #box .tick{
+    color:green;
+    font-size:7vh;
+    top:0;
+    position:absolute;
+  }
+
+  #box h1{
+    color:black;
+    font-weight: 300;
+    font-size:90%;
+    padding-left:2%;
+    padding-right:2%;
+  }
+
+  #box h3{
+    color:black;
+    font-weight:300;
+    font-size:90%;
+    padding-left:2%;
+    padding-right:2%;
+  }
+
+}
+
+/*--------------------------------- SMALL TABLETS TO BIG TABLETS --------------------------------- */
+
+@media only screen and (max-width:1023px){
+    body {font-size: 18px;}
+
+    section {padding: 30px;}
+
+  /*---------- Header / Mavbar ------------*/
+
+    #logo{
+      padding:3px;
+    }
+
+    #Logo-black{
+      margin-top:10px;
+    }
+
+  /*---------- App Feature ------------*/
+
+    .icon-big{font-size: 200%}
+
+  /*---------- Price Prediction ------------*/
+
+    .contact-form{width: 80%}
+
+  /*---------- Listing car ------------*/
+
+    .contact-list{width: 80%}
+
+  /*---------- Developer ------------*/
+
+    #developer-logo{
+      padding-top:10px;
+      width: 90%;
+      height: 100%;}
+
+    /*---------- Search Result ------------*/
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 8px;
+    }
+
+    /*---------- price prediction result ------------*/
+
+    .cars-showcase li{
+      display: block;
+      width: 50%;
+    }
+
+    /*---------- successfully listed ------------*/
+
+
+    #box .tick{
+      color:green;
+      font-size:7vh;
+      top:0;
+      position:absolute;
+    }
+
+    #box h1{
+      color:black;
+      font-weight: 300;
+      font-size:90%;
+      padding-left:2%;
+      padding-right:2%;
+    }
+
+    #box h3{
+      color:black;
+      font-weight:300;
+      font-size:90%;
+      padding-left:2%;
+      padding-right:2%;
+    }
+}
+
+/*--------------------------------- MEDIUM PHONES TO SMALL TABLETS --------------------------------- */
+
+
+@media only screen and (max-width:768px){
+  section{
+  padding:20px 0;}
+
+  body {font-size: 16px}
+
+  .row , .Search-text-box{padding: 0 4%}
+
+  .search-buttons{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .col {
+    width: 100%;
+    margin:0 0 4% 0;}
+
+  h1,h2{font-size: 150%}
+
+  /*---------- Header / Navbar ------------*/
+
+  .main-nav{display: none}
+
+  .mobile-nav-icon{
+    margin-top: 10px;
+    display: inline-block;}
+
+  .main-nav{
+  }
+  .main-nav li{
+    display: block;
+    color: white;}
+
+  .main-nav li a:link,.main-nav li a:visited{
+    border : 0;
+    display: block;
+    padding : 2px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited{
+    color: #555;
+    padding : 2px 0;
+  }
+
+  .sticky .mobile-nav-icon{
+    margin-top: 3px;
+  }
+
+  .sticky .mobile-nav-icon i{
+    color: #555;
+    top: 0;
+  }
+
+
+  #Logo{
+    font-weight: 600;
+    margin-top: 10px;
+    transform:translateY(0%);
+
+  }
+
+  #Logo-black{
+    font-weight: 600;
+    margin-top:10px;
+    font-size: 110%;
+  }
+
+  .sticky #Logo{
+    display: none;
+  }
+
+  .sticky #Logo-black{
+    display: block;
+  }
+
+  .sticky #search-logo-block{
+      display: inline-block;
+  }
+
+/*---------- App Features ------------*/
+
+  .section-features h3,p{
+    text-align: center}
+
+  .section-features p{
+    width: 100%;
+    margin:0}
+
+
+  /*---------- Price Prediction ------------*/
+
+  .contact-form{
+    text-align: center;
+  }
+
+  /*---------- Listing ------------*/
+
+  .contact-list{
+    text-align: center;
+  }
+
+/*---------- Developer ------------*/
+
+  #developer-logo{
+    height: 50%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+/*---------- Search Result ------------*/
+
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 90%;
+  }
+
+    th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+/*---------- Price Result ------------*/
+
+  .cars-showcase li{
+    display: block;
+    width: 50%;
+  }
+
+/*---------- successfully listed ------------*/
+
+  #box .tick{
+    color:green;
+    font-size:7vh;
+    top:0;
+    position:absolute;
+  }
+
+  #box h1{
+    color:black;
+    font-weight: 300;
+    font-size:90%;
+    padding-left:2%;
+    padding-right:2%;
+  }
+
+  #box h3{
+    color:black;
+    font-weight:300;
+    font-size:90%;
+    padding-left:2%;
+    padding-right:2%;
+  }
+
+}
+
+/*--------------------------------- MOBILE PHONES --------------------------------- */
+
+@media only screen and (max-width:520px){
+
+    section {padding: 10px 10px;}
+
+    .contact-form{width: 100%}
+
+    .contact-list{width: 100%}
+
+    .mobile-nav-icon {display:}
+
+    .row , .Search-text-box{padding: 0 5%}
+
+    .col {
+      width: 100%;
+      margin:0 0 3% 0;}
+
+    h1,h2{font-size: 150%}
+
+/*---------- Header / Navbar ------------*/
+
+    .main-nav{display: none}
+
+    .mobile-nav-icon{
+      display: inline-block;}
+
+    .main-nav{
+      margin-top: 10px;
+    }
+    .main-nav li{
+      font-size: 90%;
+      display: block;
+      color: white;}
+
+    .main-nav li a:link,.main-nav li a:visited{
+      border : 0;
+      display: block;
+      padding : 1px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+      color: #555;
+      padding : 1px 0;
+    }
+
+    .sticky .mobile-nav-icon{
+      margin-top: 3px;
+    }
+
+    .sticky .mobile-nav-icon i{
+      color: #555;
+      top: 0;
+    }
+
+
+    #Logo{
+      padding:3px;
+      font-weight: 600;
+      transform:translateY(0%);
+      margin-top: 10px;
+    }
+
+    #Logo-black{
+      font-weight: 600;
+      margin-top:10px;
+      font-size: 110%;
+    }
+
+    .sticky #Logo{
+      display: none;
+    }
+
+    .sticky #Logo-black{
+        display: block;
+    }
+
+    .sticky #search-logo-block{
+        display: inline-block;
+    }
+
+  /*---------- Section Feature ------------ */
+    .section-features h3,p{
+      text-align: center;
+    }
+    .section-features p{
+      width: 100%;
+      margin:0}
+
+
+/*--------- Price ------------- */
+    .contact-form{
+      text-align: center;
+    }
+
+
+/*--------- List ------------- */
+    .contact-list{
+      text-align: center;
+    }
+
+/*---------Developer ------------ */
+
+    #developer-logo{
+      width: 50%;
+      height: 25%;
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-bottom: 30px;
+    }
+
+
+/*---------- Search Result ------------*/
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 90%;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 8px;
+    }
+
+  /*---------- Price Prediction Result ------------*/
+
+    .cars-showcase li{
+      display: block;
+      width: 50%;
+    }
+
+    /*---------- successfully listed ------------*/
+
+    #box .tick{
+      color:green;
+      font-size:7vh;
+      top:0;
+      position:absolute;
+    }
+
+    #box h1{
+      color:black;
+      font-weight: 300;
+      font-size:90%;
+      padding-left:2%;
+      padding-right:2%;
+    }
+
+    #box h3{
+      color:black;
+      font-weight:300;
+      font-size:90%;
+      padding-left:2%;
+      padding-right:2%;
+    }
+}
