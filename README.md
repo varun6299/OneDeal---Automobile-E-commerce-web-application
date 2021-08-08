@@ -39,7 +39,7 @@ https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 3. The new entries could also feature in the search results.
 
 **DEPLOYMENT** - 
-1. Deployment was performed using Git and Heroku.
+1. Deployment was performed using Github and Heroku.
 
 The link to the website is provided below - 
 https://onedeal.herokuapp.com/
