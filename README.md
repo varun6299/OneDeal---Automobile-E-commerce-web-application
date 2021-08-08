@@ -13,6 +13,8 @@ This project involves the use of Python to process the data and create a supervi
 The dataset used for this project has been taken from Kaggle. It is a used car dataset and the link to the dataset is provided below - 
 https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 
+![Price Prediction Section](Static%20duplicate/GitHubImages/PricePrediction.png)
+
 
 **PRICE PREDICTION ALGORITHM** - 
 1. The Price predicting regression algorithm was created using Python.
