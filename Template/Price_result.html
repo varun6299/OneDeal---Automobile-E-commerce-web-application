@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/Price_Result.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/queries.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/Grid.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/ionicons.min.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+    <title>OneDeal: Price Prediction Result</title>
+  </head>
+  <body>
+
+  <nav class=nav-pane>
+    <div class="row">
+      <h1 id="logo">ONEDEAL</h1>
+      <a id="home" href="{{url_for('Index')}}">Go to Home Page</a>
+    </div>
+  </nav>
+
+
+  <header id = "price-header">
+
+  <section class = "section-cars">
+    <ul class = "cars-showcase group">
+      <li>
+        <figure class = "cars">
+          <img src="Static/css/1_copy.jpeg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class = "cars">
+          <img src="Static/css/2_copy.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class = "cars">
+          <img src="Static/css/3_copy.jpg" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure class = "cars">
+          <img src="Static/css/men-shaking-hands-handing-off-keys.jpg" alt="">
+        </figure>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-price">
+      <div class="price-prediction-result">
+        <div class="row">
+          <h2>Car Price Valuation Complete</h2>
+        </div>
+        <div class="row">
+          <p>Congratulations. The process is complete. Based on the details of the car given, the expected best price at which at your car can be resold is</p>
+          <h1>₹{{prediction}} Lakhs</h1>
+          <p>Note : Why Stop Here ? Listing your car for sale will take just a few minutes. Proceed to the Car Listing Section and fill the required details. You can use the above price as the expected price value.</p>
+      </div>
+    </div>
+  </section>
+
+
+  </header>
+
+  </body>
+</html>

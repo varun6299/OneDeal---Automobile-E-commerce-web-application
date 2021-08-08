@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/Search_Result.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/Grid.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/ionicons.min.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/queries.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+    <title>OneDeal : Search Results</title>
+  </head>
+  <body>
+
+    <nav class=nav-pane>
+      <div class="row">
+        <h1 id="logo">ONEDEAL</h1>
+        <a id="home" href="{{url_for('Index')}}">Go to Home Page</a>
+      </div>
+    </nav>
+
+  <section class="section-search">
+
+      <div class="search-result">
+        <div class="row">
+          <h2>Search Complete</h2>
+          <p>Based on your search results, the most affordable models found are displayed below :</p>
+          <h6>(NOTE : TOP 10 MODELS, IF AVAILABLE, DISPLAYED BY DEFAULT)</h6>
+        </div>
+
+        <div = class="row table-responsive" style="overflow-x: auto">
+        <table>
+          <thead>
+          <tr>
+            <th>Model Name</th>
+            <th>Location of Sale</th>
+            <th>Fuel Type</th>
+            <th>Model Release Year</th>
+            <th>Transmission</th>
+            <th>Kilometers Driven</th>
+            <th>Price Expected</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for car in car_list %}
+          <tr>
+            <td>{{car.Name}}</td>
+            <td>{{car.Location}}</td>
+            <td>{{car.Fuel_Type}}</td>
+            <td>{{car.Year}}</td>
+            <td>{{car.Transmission}}</td>
+            <td>{{car.Kilometers_Driven}}</td>
+            <td>{{car.Price}} lakhs</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+
+  </body>
+</html>

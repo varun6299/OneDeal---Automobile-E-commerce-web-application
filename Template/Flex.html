@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/flex.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/Grid.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/ionicons.min.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/queries.css">
+    <link rel="stylesheet" type = 'text/css' href="Static/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+    <title>OneDeal</title>
+  </head>
+  <body>
+
+    {% for mess in get_flashed_messages()%}
+    <div id = "box">
+      <span class = "tick"><i class="ion-checkmark"></i></span>
+      <h1>Congratulations!</h1>
+      <h3>You have successfully listed your car for sale</h3>
+      <a onclick="pop()" class= "close">Close</a>
+    </div>
+    {% endfor %}
+
+    <script type="text/javascript">
+      var c = 0;
+      function pop() {
+        if (c == 0){
+          document.getElementById("box").style.display = "flex";
+          c = 1;
+        }else{
+          document.getElementById("box").style.display = "none";
+          c = 0;
+        }
+      }
+
+    </script>
+  <header id='search-section'>
+    <nav>
+      <div class="row">
+      <h1 id="Logo">OneDeal</h1>
+      <h1 id="Logo-black">OneDeal</h1>
+      <ul class="main-nav js--main-nav">
+        <li><a href="#developer-section">Developer</a></li>
+        <li><a href="#price-section">Get Best Price</a></li>
+        <li><a href="#list-section">List Car</a></li>
+        <li id="search-logo-block"><a href="#search-section">Search Car</a></li>
+      </ul>
+      <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+      </div>
+    </nav>
+
+    <div class="Search-text-box" style="margin-top:8%;padding-bottom:8%;">
+      <div class="row">
+        <h1>FIND THE CAR FOR YOUR JOURNEY AHEAD</h1>
+        <h3>SEARCH CARS | LIST CARS | GET BEST PRICE</h3>
+      </div>
+      <div class="row">
+        <form class="" action="{{url_for('Search_Result')}}">
+          <div class="col span-1-of-3">
+              <select class="search-buttons" name="Brand">
+                <option value="Ambassador">Ambassador</option><option value="Audi">Audi</option><option value="BMW">BMW</option><option value="Bentley">Bentley</option><option value="Chevrolet">Chevrolet</option><option value="Datsun">Datsun</option><option value="Fiat">Fiat</option><option value="Force">Force</option><option value="Ford">Ford</option><option value="Honda">Honda</option><option value="Hyundai">Hyundai</option><option value="ISUZU">ISUZU</option><option value="Jaguar">Jaguar</option><option value="Jeep">Jeep</option><option value="Land Rover">Land Rover</option><option value="Lamborghini">Lamborghini</option><option value="Mahindra">Mahindra</option><option value="Mini Cooper">Mini Cooper</option><option value="Mitsubishi">Mitsubishi</option><option value="Maruti">Maruti</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="Nissan">Nissan</option><option value="Porsche">Porsche</option><option value="Renault">Renault</option><option value="Skoda">Skoda</option><option value="Smart">Smart</option><option value="Tata">Tata</option><option value="Toyata">Toyata</option><option value="Volkswagen">Volkswagen</option><option value="Volvo">Volvo</option>
+              </select>
+          </div>
+          <div class="col span-1-of-3">
+            <select class="search-buttons" name="Location">
+              <option value="Ahmedabad" selected>Ahmedabad</option><option value="Bangalore">Bangalore</option><option value="Chennai">Chennai</option><option value="Coimbatore">Coimbatore</option><option value="Delhi">Delhi</option><option value="Hyderabad">Hyderabad</option><option value="Goa">Goa</option><option value="Jaipur">Jaipur</option><option value="Kanyakumari">Kanyakumari</option><option value="Kochi">Kochi</option><option value="Kolkata">Kolkata</option><option value="Lucknow">Lucknow</option><option value="Mumbai">Mumbai</option><option value="Nagpur">Nagpur</option><option value="Pune">Pune</option><option value="Raipur">Raipur</option><option value="Surat">Surat</option><option value="Visakhapatnam">Visakhapatnam</option><option value="Vizag">Vizag</option>
+            </select>
+          </div>
+          <div class="col span-1-of-3">
+            <select class="search-buttons" name="Price">
+              <option value="0-10" selected>0-10 Lakhs</option><option value="10-20">10-20 Lakhs</option><option value="20-50">20-50 Lakhs</option><option value="50-100">50 Lakhs-1 crore</option><option value="Above 1cr">Above 1 Crore </option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="col span-3-of-3">
+              <input type="submit" value="Search">
+            </div>
+          </div>
+          </form>
+        </div>
+    </div>
+  </header>
+
+
+
+
+    <section class="section-features js--section-features">
+      <div class="row">
+        <h2>About OneDeal</h2>
+        <p class = 'intro'>This is a prototype of an e-commerce automobile platform created as a part of a self learning project to implement multiple concepts such as Data Science, Machine Learning, SQL, Flask and Web Design. Using this application, you can -</p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3 box">
+          <i class="ion-search icon-big"></i>
+          <h3>Search for Cars</h3>
+          <p>Don't know where to search for your dream car ? No Problem! Using our database of more than 6000 vehicles listed for sales, search for your dream cars from the best brands available, at the location of your preference and most importantly, within your budget.</p>
+        </div>
+        <div class="col span-1-of-3 box">
+          <i class="ion-ios-paper-outline icon-big"></i>
+          <h3>List Cars for Sale</h3>
+          <p>Want to sell you car but don't know where to list it? No Problem! Using the SQLite and Flaskforms, we have created a interface which facilitates storing your car's information in a database of car sellers. List your car on OneDeal and get connected to a large pool of buyers interested in your car.</p>
+        </div>
+        <div class="col span-1-of-3 box">
+          <i class="ion-cash icon-big"></i>
+          <h3>Get the Best Price</h3>
+          <p>One of the biggest problems for anyone selling their car. Want to put up your car for sale but don't know how to decide it's price ? No Problem! Use the Best Price Predictor, based on a Machine Learning algorithm, get rid of your headache to decide price and let us give you the price within seconds.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class = "section-form js-section-price" id='price-section'>
+      <div class="row">
+        <h2>Get Your Car's Best Price</h2>
+      </div>
+      <div class="row">
+        <form class="contact-form" action="{{url_for('Price_Prediction')}}">
+          <div class="row">
+            <div class='col span-1-of-3'>
+              <label for="">Brand</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select class="Inputs" name="Brand"><option value="Ambassador">Ambassador</option><option value="Audi">Audi</option><option value="BMW">BMW</option><option value="Bentley">Bentley</option><option value="Chevrolet">Chevrolet</option><option value="Datsun">Datsun</option><option value="Fiat">Fiat</option><option value="Force">Force</option><option value="Ford">Ford</option><option value="Honda">Honda</option><option value="Hyundai">Hyundai</option><option value="ISUZU">ISUZU</option><option value="Jaguar">Jaguar</option><option value="Jeep">Jeep</option><option value="Land Rover">Land Rover</option><option value="Lamborghini">Lamborghini</option><option value="Mahindra">Mahindra</option><option value="Mini Cooper">Mini Cooper</option><option value="Mitsubishi">Mitsubishi</option><option value="Maruti">Maruti</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="Nissan">Nissan</option><option value="Porsche">Porsche</option><option value="Renault">Renault</option><option value="Skoda">Skoda</option><option value="Smart">Smart</option><option value="Tata">Tata</option><option value="Toyata">Toyata</option><option value="Volkswagen">Volkswagen</option><option value="Volvo">Volvo</option></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Model Release Year</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input class = "" type="text" name="Year" placeholder="Enter Year of Model Release" autocomplete="off" required="Please Enter Value">
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Kilometers Driven</label>
+            </div>
+            <div class="col span-2-of-3">
+            <input class = "Inputs" type="text" name="KM" placeholder="Enter Kilometers Driven" autocomplete="off" required="Please Enter Value">
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Mileage</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input class = "Inputs1" type="text" name="Mileage" placeholder="Enter Mileage in Kmpl" autocomplete="off" required="Please Enter Value">
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Power</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input class = "" type="text" name="Power" placeholder="Enter Power in bhp" autocomplete="off" required="Please Enter Value">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Seating Capacity</label>
+            </div>
+            <div class="col span-2-of-3">
+                <input class = "" type="text" name="Seats" placeholder="Enter No. of Seats" autocomplete="off" required="Please Enter Value">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Fuel Type</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select class="" name="Fuel"><option value="Petrol">Petrol</option><option value="Diesel">Diesel</option><option value="CNG">CNG</option><option value="LPG">LPG</option></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">Transmission</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select class="" name="Transmission"><option value="Manual">Manual</option><option value="Automatic">Automatic</option></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-3-of-3">
+              <input id = "Submit" type="submit" value="Get Price">
+            </div>
+        </div>
+        </form>
+      </div>
+    </section>
+
+
+
+
+    <section class = "section-list js-section-list" id='list-section'>
+      <div class="row">
+        <h2>List Your Car for Sale</h2>
+      </div>
+      <div class="row">
+        <form class="contact-list" action="" method="POST">
+          <div class="row">
+            <div class='col span-1-of-3'>
+              {{form.hidden_tag()}}
+              <label for="">{{form.Name.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Name(autocomplete="off",class_ = "field-inputs",description="Show")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Brand.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Brand(autocomplete="off",class_ = "select-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Location.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Location(autocomplete="off",class_ = "select-inputs")}}
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Year.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Year(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Kilometers_Driven.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Kilometers_Driven(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Fuel_Type.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Fuel_Type(autocomplete="off",class_ = "select-inputs")}}
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Transmission.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Transmission(autocomplete="off",class_ = "select-inputs")}}
+            </div>
+          </div><div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Owner_Type.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Owner_Type(autocomplete="off",class_ = "select-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+                <label for="">{{form.Mileage.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Mileage(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Engine.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Engine(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Power.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Power(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Seats.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Seats(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="">{{form.Expected_Price.label}}</label>
+            </div>
+            <div class="col span-2-of-3">
+              {{form.Expected_Price(autocomplete="off",class_ = "field-inputs")}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-3-of-3">
+              <input id = "Submit" type="submit" name="Location" value="Submit Details">
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
+
+
+
+
+    <section class = "Developer js--developer-section" id='developer-section'>
+      <div class="row">
+        <h2>About the Developer</h2>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <img id='developer-logo' src="Static/css/Varun latest pic.jpg" alt="">
+        </div>
+        <div class="col span-2-of-3">
+          <p>Hello! My Name is Varun Sagar Theegala and I am a Data Scientist from India. Graduated with a Bachelor's degree in Business Administration (BBA) from Madras Christian College in 2020, I have 9 months of experience as a trainee data analyst at Timelinks, a leading retail franchisee of Titan Limited, and 1 month of internship experience as a Freelance Market Research Trainee at Kantar.<br><br>I developed the curiosity to play with data and uncover stories through insights and trends hidden in data while in College and since then, I have been learning Data Science and Machine Learning, building my knowledge and technical skills through related work, projects and courseworks.<br><br>OneDeal is an attempt to combine and apply all my learnings and skillset into one Project. I am open to discussions and feedback on this project or on how to improve it. Would be eager to talk Data Science with you.</p>
+          <br>
+          <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/varun-sagar-theegala/"><i class="ion-social-linkedin small"></i></a><a href="https://github.com/varun6299"><i class="ion-social-github small-2"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <div class="row">
+      <p>© Varun Sagar Theegala 2021</p>
+    </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/jscript" src="Static/js/script.js"></script>
+    <script type="text/jscript" src="Static/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/src/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+  </body>
+</html>
