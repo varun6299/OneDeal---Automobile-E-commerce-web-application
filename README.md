@@ -1,7 +1,7 @@
 # OneDeal : An Automobile E-commerce web application
 
 # Home Page
-![HomePage](Static duplicate/GitHubImages/HomePage.png)(http://127.0.0.1:5000/)
+![HomePage](Static duplicate/GitHubImages/HomePage.png)
 
 One Deal is a self learning project undertaken to apply Python, HTML, CSS and Flask all into building an application.
 
