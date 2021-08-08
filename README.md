@@ -1,4 +1,4 @@
-# OneDeal---Automobile-E-commerce-web-application
+# OneDeal : An Automobile E-commerce web application
 
 One Deal is a self learning project undertaken to apply Python, HTML, CSS and Flask all into building an application.
 
