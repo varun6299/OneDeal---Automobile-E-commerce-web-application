@@ -13,7 +13,7 @@ This project involves the use of Python to process the data and create a supervi
 The dataset used for this project has been taken from Kaggle. It is a used car dataset and the link to the dataset is provided below - 
 https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 
-![Price Prediction Section](Static%20duplicate/GitHubImages/PricePrediction.png)
+![Price Prediction Section](Static%20duplicate/GitHubImages/Price%20Prediction%20Result.png)
 
 
 **PRICE PREDICTION ALGORITHM** - 
@@ -29,6 +29,8 @@ https://www.kaggle.com/avikasliwal/used-cars-price-prediction
 1. The website was created using HTML for website structure and CSS for formatting and designing elements.
 2. The use of Jquery was made to create additional animations and scrolling mechanisms to make the website smoother.
 3. Media Queries were used to make the webapp responsive to different screen sizes and devices.
+
+![Price Prediction Section](Static%20duplicate/GitHubImages/Search%20Result.png)
 
 **DATABASE CREATION** - 
 1. The database for storing listed car information from flaskforms was created using SQLite.
